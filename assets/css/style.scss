@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Sans';
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    padding: 0 5vw;
+    background-color: #FF69B4;
+    color: #E4EEF1;
+}
+
+header div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20vw;
+}
+
+header div img{
+    width: 4vw;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+header nav ul li a{
+    font-size: 1.5vw;
+    color: #E4EEF1;
+    cursor: pointer;
+}
+
+header nav ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+.section-alerta{
+    display: flex;
+    background-color: #FFD9EC;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vw;
+}
+
+.section-alerta p{
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+.section-alerta img{
+    width: 15vw;
+}
+
+.section-conscientizacao{
+    display: flex;
+    background-color: #FF69B4;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 2vw;
+}
+
+.section-conscientizacao p{
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+.section-conscientizacao img{
+    width: 20vw;
+}
+
+.section-dicas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFD9EC;
+    padding: 4vw;
+    flex-wrap: wrap;
+}
+
+.section-dicas img {
+    width: 15vw; 
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF69B4;
+    align-items: center;
+    padding: 0 5vw;
+    height: 20vh;
+}
+
+footer nav ul{
+    display: flex;
+}
+
+footer nav ul li a img{
+    width: 4vw; 
+}
+
+footer section p{
+    text-align: center;
+    color: #fff;
+    font-size: 1.2vw; /* O tamanho da fonte será relativo à largura da viewport */
+}
+
+footer img{
+    width: 8vw; 
+}
+
+@media (max-width: 1100px) {
+    .section-alerta img{
+        width: 20vw;
+    }
+    .section-conscientizacao img{
+        width: 20vw;
+    }
+}
+
+@media (max-width: 700px) {
+    header div h2{
+        font-size: 3vw;
+        color: #E4EEF1;
+    }
+    header nav ul li a{
+        font-size: 2.9vw;
+        color: #E4EEF1;
+    }
+    .section-alerta{
+        display: flex;
+        gap: 2em;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 5vw;
+    }
+        
+    .section-alerta p{
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .section-alerta img{
+        width: 80vw;
+    }
+
+    .section-conscientizacao{
+        display: flex;
+        gap: 2em;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 5vw;
+    }
+
+    .section-conscientizacao p{
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .section-conscientizacao img{
+        width: 80vw;
+    }
+
+    .section-dicas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    
+    .section-dicas img {
+        width: 15vw; 
+    }
+
+    footer{
+        gap: 2em;
+    }
+
+    footer nav ul li a img{
+        width: 6vw; 
+    }
+
+    footer section p{
+        font-size: 3vw; /* O tamanho da fonte será relativo à largura da viewport */
+    }
+
+    footer img{
+        width: 10vw; 
+    }
+
+
+}
